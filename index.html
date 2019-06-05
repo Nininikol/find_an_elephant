@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="">ОЧКИ</h1>
+<h1 class="price"  style="">100</h1>
+<div class="game1">
+	<div class="img1" style="background-image: url(img/Antilop.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 500px; margin-top: 50px;"></div>
+	<div  class="img2" style="background-image: url(img/begemot.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute;  margin-left: 900px; margin-top: 50px;"></div>
+	<div class="img3" style="background-image: url(img/elephant.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 1100px; margin-top: 360px;"></div>
+	<div class="img4" style="background-image: url(img/giena.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top: 200px;">
+	</div>
+	<div class="img5" style="background-image: url(img/jiraf.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 100px; margin-top: 300px;"></div>
+	<div class="img6" style="background-image: url(img/korova.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 600px; margin-top: 450px;"></div>
+	<div class="img7" style="background-image: url(img/lion.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 1200px; margin-top: 0px;">
+	</div>
+	<div class="img8" style="background-image: url(img/nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 100px; margin-top: 30px;"></div>
+	<div class="img9" style="background-image: url(img/zebra.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 300px; margin-top: 250px;"></div>
+
+
+	<div class="vopros1" style="display: none">
+		<h2 style="">Где спрятан лев?</h2>
+	</div> 
+
+</div>
+<div class="game2" style="display: none;">
+	<div class="img10" style="background-image: url(img2/algebra.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 500px; margin-top: 50px;"></div>
+	<div  class="img11" style="background-image: url(img2/geometria.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute;  margin-left: 900px; margin-top: 50px;"></div>
+	<div class="img12" style="background-image: url(img2/biologia.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 1100px; margin-top: 360px;"></div>
+	<div class="img13" style="background-image: url(img2/himia.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top: 200px;">
+	</div>
+	<div class="img14" style="background-image: url(img2/informatika.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 100px; margin-top: 300px;"></div>
+	<div class="img15" style="background-image: url(img2/kinematika.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 600px; margin-top: 450px;"></div>
+	<div class="img16" style="background-image: url(img2/astranomia.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 1200px; margin-top: 0px;">
+	</div>
+	<div class="img17" style="background-image: url(img2/optika.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 100px; margin-top: 30px;"></div>
+	<div class="img18" style="background-image: url(img2/russkiy.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-left: 300px; margin-top: 250px;"></div>
+
+
+	<div class="vopros2" style="display: none">
+		<h2 style="">Где спрятана кинематика?</h2>
+	</div> 
+</div>
+
+
+
+
+
+<script>
+let price = 100;
+let indicator =  function(){
+						price = price-10;
+						document.querySelector('.price').innerHTML = price;
+				}
+let time = function(){
+	document.querySelector('.img1').style.background = "black";
+	document.querySelector('.img2').style.background = "black";
+	document.querySelector('.img3').style.background = "black";
+	document.querySelector('.img4').style.background = "black";
+	document.querySelector('.img5').style.background = "black";
+	document.querySelector('.img6').style.background = "black";
+	document.querySelector('.img7').style.background = "black";
+	document.querySelector('.img8').style.background = "black";
+	document.querySelector('.img9').style.background = "black";
+	document.querySelector('.vopros1').style.display= 'block';
+}
+
+let time2 = function(){
+	document.querySelector('.img10').style.background = "black";
+	document.querySelector('.img11').style.background = "black";
+	document.querySelector('.img12').style.background = "black";
+	document.querySelector('.img13').style.background = "black";
+	document.querySelector('.img14').style.background = "black";
+	document.querySelector('.img15').style.background = "black";
+	document.querySelector('.img16').style.background = "black";
+	document.querySelector('.img17').style.background = "black";
+	document.querySelector('.img18').style.background = "black";
+	document.querySelector('.vopros2').style.display= 'block';
+}
+
+setTimeout(time, 5000);
+
+document.querySelector('.img7').onclick = function(){
+		alert("Молодец");
+		document.querySelector('.img7').style.backgroundImage= 'url(img/lion.jpg)';
+		document.querySelector('.img7').style.backgroundSize= '100%100%';
+		price = price+100;
+		document.querySelector('.price').innerHTML = price;
+		document.querySelector('.game1').style.display= 'none';
+		document.querySelector('.game2').style.display= 'block';
+		setTimeout(time2, 5000);
+	}
+document.querySelector('.img1').onclick = function(){
+		alert("НЕМолодец");
+		document.querySelector('.img1').style.backgroundImage= 'url(img/Antilop.jpg)';
+		document.querySelector('.img1').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img2').onclick = function(){
+		alert("ЛОЛ");
+		document.querySelector('.img2').style.backgroundImage= 'url(img/begemot.jpg)';
+		document.querySelector('.img2').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img3').onclick = function(){
+		alert("КЕК");
+		document.querySelector('.img3').style.backgroundImage= 'url(img/elephant.jpg)';
+		document.querySelector('.img3').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img4').onclick = function(){
+		alert("чебурек");
+		document.querySelector('.img4').style.backgroundImage= 'url(img/giena.jpg)';
+		document.querySelector('.img4').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img5').onclick = function(){
+		alert("НЕ оч");
+		document.querySelector('.img5').style.backgroundImage= 'url(img/jiraf.jpg)';
+		document.querySelector('.img5').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img6').onclick = function(){
+		alert("не надо так");
+		document.querySelector('.img6').style.backgroundImage= 'url(img/korova.jpg)';
+		document.querySelector('.img6').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img8').onclick = function(){
+		alert("они ведь так похожи");
+		document.querySelector('.img8').style.backgroundImage= 'url(img/nosorog.jpg)';
+		document.querySelector('.img8').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img9').onclick = function(){
+		alert("неет");
+		document.querySelector('.img9').style.backgroundImage= 'url(img/zebra.jpg)';
+		document.querySelector('.img9').style.backgroundSize= '100%100%';
+		indicator();
+}
+	
+//2 игра
+
+document.querySelector('.img15').onclick = function(){
+		alert("Молодец");
+		document.querySelector('.img15').style.backgroundImage= 'url(img2/kinematika.jpg)';
+		document.querySelector('.img15').style.backgroundSize= '100%100%';
+		price = price+100;
+		document.querySelector('.price').innerHTML = price;
+	}
+document.querySelector('.img10').onclick = function(){
+		alert("НЕМолодец");
+		document.querySelector('.img10').style.backgroundImage= 'url(img2/algebra.jpg)';
+		document.querySelector('.img10').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img12').onclick = function(){
+		alert("ЛОЛ");
+		document.querySelector('.img12').style.backgroundImage= 'url(img2/biologia.jpg)';
+		document.querySelector('.img12').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img13').onclick = function(){
+		alert("КЕК");
+		document.querySelector('.img13').style.backgroundImage= 'url(img2/himia.jpg)';
+		document.querySelector('.img13').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img14').onclick = function(){
+		alert("чебурек");
+		document.querySelector('.img14').style.backgroundImage= 'url(img2/informatika.jpg)';
+		document.querySelector('.img14').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img17').onclick = function(){
+		alert("НЕ оч");
+		document.querySelector('.img17').style.backgroundImage= 'url(img2/optika.jpg)';
+		document.querySelector('.img17').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img16').onclick = function(){
+		alert("не надо так");
+		document.querySelector('.img16').style.backgroundImage= 'url(img2/astranomia.jpg)';
+		document.querySelector('.img16').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img18').onclick = function(){
+		alert("они ведь так похожи");
+		document.querySelector('.img18').style.backgroundImage= 'url(img2/russkiy.jpg)';
+		document.querySelector('.img18').style.backgroundSize= '100%100%';
+		indicator();
+	}
+document.querySelector('.img11').onclick = function(){
+		alert("неет");
+		document.querySelector('.img11').style.backgroundImage= 'url(img2/geometria.jpg)';
+		document.querySelector('.img11').style.backgroundSize= '100%100%';
+		indicator();
+	}
+
+</script>	
+</body>
+</html>
